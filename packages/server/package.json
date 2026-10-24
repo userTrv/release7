@@ -1,0 +1,26 @@
+{
+  "name": "@ripen/server",
+  "version": "0.1.0",
+  "description": "Self-hosted Ripen server: Node.js built-ins and SQLite, no runtime dependencies.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "ripen-source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "ripen-server": "./dist/main.js"
+  },
+  "dependencies": {
+    "@ripen/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@ripen/sdk": "workspace:*"
+  }
+}

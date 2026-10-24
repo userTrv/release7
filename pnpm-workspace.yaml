@@ -1,0 +1,17 @@
+packages:
+  - packages/*
+
+# Защита от атак через цепочку поставок (см. CLAUDE.md, «Зависимости»).
+
+# Ставим только версии, опубликованные не меньше 7 дней назад (в минутах).
+minimumReleaseAge: 10080
+
+# Не ставить версию, у которой доверие ниже, чем у предыдущих.
+trustPolicy: no-downgrade
+
+# Транзитивные зависимости только из реестра: без git-репозиториев и tarball по URL.
+blockExoticSubdeps: true
+
+# Скрипты установки запрещены всем пакетам.
+strictDepBuilds: true
+onlyBuiltDependencies: []

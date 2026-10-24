@@ -1,0 +1,17 @@
+{
+  "name": "@ripen/core",
+  "version": "0.1.0",
+  "description": "Ripen domain model: channels, contract, gates. No dependencies.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "ripen-source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ]
+}
